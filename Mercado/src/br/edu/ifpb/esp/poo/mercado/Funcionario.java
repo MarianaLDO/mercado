@@ -3,8 +3,13 @@ package br.edu.ifpb.esp.poo.mercado;
 import java.math.BigDecimal;
 import java.util.Calendar;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Funcionario {
 
+	@Id
 	private Long id;
 	private String nome;
 	private Calendar dataDeContratacao;

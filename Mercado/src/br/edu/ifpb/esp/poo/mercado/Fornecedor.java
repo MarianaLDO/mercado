@@ -2,11 +2,18 @@ package br.edu.ifpb.esp.poo.mercado;
 
 import java.util.Set;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+
+@Entity
 public class Fornecedor {
 	
+	@Id
 	private Long id;
 	private String nome;
 	private Set<Produto> produtosFornecidos;
+	
 	public Long getId() {
 		return id;
 	}

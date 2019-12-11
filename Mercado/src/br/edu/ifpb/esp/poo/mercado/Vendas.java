@@ -4,8 +4,13 @@ import java.math.BigDecimal;
 import java.util.Calendar;
 import java.util.Set;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Vendas {
 
+	@Id
 	private Long id;
 	private BigDecimal valorDaVenda;
 	private Calendar dataDaVenda;
